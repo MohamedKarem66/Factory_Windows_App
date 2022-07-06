@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Factory_DatabaseDataSet1" targetNamespace="http://tempuri.org/Factory_DatabaseDataSet1.xsd" xmlns:mstns="http://tempuri.org/Factory_DatabaseDataSet1.xsd" xmlns="http://tempuri.org/Factory_DatabaseDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Factory_DatabaseConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Factory_DatabaseConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApp1.Properties.Settings.GlobalReference.Default.Factory_DatabaseConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Customer DataTableAdapter" GeneratorDataComponentClassName="Customer_DataTableAdapter" Name="Customer Data" UserDataComponentName="Customer DataTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Factory_DatabaseConnectionString (Settings)" DbObjectName="[Factory Database].dbo.[Customer Data]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Customer_ID, Customer_Ballance, Customer_Name, Customer_Mobile, [Customer_E-Mail], Customer_User_Name, Customer_Password FROM dbo.[Customer Data]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Customer_ID" DataSetColumn="Customer_ID" />
+              <Mapping SourceColumn="Customer_Ballance" DataSetColumn="Customer_Ballance" />
+              <Mapping SourceColumn="Customer_Name" DataSetColumn="Customer_Name" />
+              <Mapping SourceColumn="Customer_Mobile" DataSetColumn="Customer_Mobile" />
+              <Mapping SourceColumn="Customer_E-Mail" DataSetColumn="Customer_E-Mail" />
+              <Mapping SourceColumn="Customer_User_Name" DataSetColumn="Customer_User_Name" />
+              <Mapping SourceColumn="Customer_Password" DataSetColumn="Customer_Password" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Factory_DatabaseDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Factory_DatabaseDataSet1" msprop:Generator_UserDSName="Factory_DatabaseDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Customer_x0020_Data" msprop:Generator_TableClassName="Customer_DataDataTable" msprop:Generator_TableVarName="tableCustomer_Data" msprop:Generator_TablePropName="Customer_Data" msprop:Generator_RowDeletingName="Customer_DataRowDeleting" msprop:Generator_RowChangingName="Customer_DataRowChanging" msprop:Generator_RowEvHandlerName="Customer_DataRowChangeEventHandler" msprop:Generator_RowDeletedName="Customer_DataRowDeleted" msprop:Generator_UserTableName="Customer Data" msprop:Generator_RowChangedName="Customer_DataRowChanged" msprop:Generator_RowEvArgName="Customer_DataRowChangeEvent" msprop:Generator_RowClassName="Customer_DataRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Customer_ID" msprop:Generator_ColumnVarNameInTable="columnCustomer_ID" msprop:Generator_ColumnPropNameInRow="Customer_ID" msprop:Generator_ColumnPropNameInTable="Customer_IDColumn" msprop:Generator_UserColumnName="Customer_ID" type="xs:int" />
+              <xs:element name="Customer_Ballance" msprop:Generator_ColumnVarNameInTable="columnCustomer_Ballance" msprop:Generator_ColumnPropNameInRow="Customer_Ballance" msprop:Generator_ColumnPropNameInTable="Customer_BallanceColumn" msprop:Generator_UserColumnName="Customer_Ballance" type="xs:int" />
+              <xs:element name="Customer_Name" msprop:Generator_ColumnVarNameInTable="columnCustomer_Name" msprop:Generator_ColumnPropNameInRow="Customer_Name" msprop:Generator_ColumnPropNameInTable="Customer_NameColumn" msprop:Generator_UserColumnName="Customer_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Customer_Mobile" msprop:Generator_ColumnVarNameInTable="columnCustomer_Mobile" msprop:Generator_ColumnPropNameInRow="Customer_Mobile" msprop:Generator_ColumnPropNameInTable="Customer_MobileColumn" msprop:Generator_UserColumnName="Customer_Mobile">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Customer_E-Mail" msprop:Generator_ColumnVarNameInTable="_columnCustomer_E_Mail" msprop:Generator_ColumnPropNameInRow="_Customer_E_Mail" msprop:Generator_ColumnPropNameInTable="_Customer_E_MailColumn" msprop:Generator_UserColumnName="Customer_E-Mail">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Customer_User_Name" msprop:Generator_ColumnVarNameInTable="columnCustomer_User_Name" msprop:Generator_ColumnPropNameInRow="Customer_User_Name" msprop:Generator_ColumnPropNameInTable="Customer_User_NameColumn" msprop:Generator_UserColumnName="Customer_User_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Customer_Password" msprop:Generator_ColumnVarNameInTable="columnCustomer_Password" msprop:Generator_ColumnPropNameInRow="Customer_Password" msprop:Generator_ColumnPropNameInTable="Customer_PasswordColumn" msprop:Generator_UserColumnName="Customer_Password">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Customer_x0020_Data" />
+      <xs:field xpath="mstns:Customer_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

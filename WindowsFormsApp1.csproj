@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{58C99FAA-1703-43E7-9AB9-3D6411406F72}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>Factory Automation Integrated System</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Google-Noto-Emoji-Travel-Places-42498-factory.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADD DATA\New Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADD DATA\New Customer.designer.cs">
+      <DependentUpon>New Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADD DATA\New Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADD DATA\New Employee.designer.cs">
+      <DependentUpon>New Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADD DATA\New Material.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADD DATA\New Material.designer.cs">
+      <DependentUpon>New Material.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADD DATA\New Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADD DATA\New Product.designer.cs">
+      <DependentUpon>New Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADD DATA\New Supplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADD DATA\New Supplier.designer.cs">
+      <DependentUpon>New Supplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Factory_DatabaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Factory_DatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Factory_DatabaseDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Factory_DatabaseDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Factory_DatabaseDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Factory_DatabaseDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Factory_DatabaseDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Factory_DatabaseDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Index.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Index.Designer.cs">
+      <DependentUpon>Index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Log In.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Log In.Designer.cs">
+      <DependentUpon>Log In.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAIN FUNCTION\Discount Material.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAIN FUNCTION\Discount Material.Designer.cs">
+      <DependentUpon>Discount Material.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAIN FUNCTION\New Production.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAIN FUNCTION\New Production.Designer.cs">
+      <DependentUpon>New Production.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAIN FUNCTION\New Purchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAIN FUNCTION\New Purchase.designer.cs">
+      <DependentUpon>New Purchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAIN FUNCTION\New Sale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAIN FUNCTION\New Sale.Designer.cs">
+      <DependentUpon>New Sale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAIN FUNCTION\Pay Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAIN FUNCTION\Pay Product.Designer.cs">
+      <DependentUpon>Pay Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SHOW DATA\Customer Data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SHOW DATA\Customer Data.designer.cs">
+      <DependentUpon>Customer Data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SHOW DATA\Discount Material Data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SHOW DATA\Discount Material Data.Designer.cs">
+      <DependentUpon>Discount Material Data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SHOW DATA\Employee Data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SHOW DATA\Employee Data.designer.cs">
+      <DependentUpon>Employee Data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SHOW DATA\Material Data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SHOW DATA\Material Data.designer.cs">
+      <DependentUpon>Material Data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SHOW DATA\Product Data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SHOW DATA\Product Data.designer.cs">
+      <DependentUpon>Product Data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SHOW DATA\Production Data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SHOW DATA\Production Data.Designer.cs">
+      <DependentUpon>Production Data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SHOW DATA\Purchase Data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SHOW DATA\Purchase Data.designer.cs">
+      <DependentUpon>Purchase Data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SHOW DATA\PurchaseProduct Data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SHOW DATA\PurchaseProduct Data.Designer.cs">
+      <DependentUpon>PurchaseProduct Data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SHOW DATA\Sale Data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SHOW DATA\Sale Data.designer.cs">
+      <DependentUpon>Sale Data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SHOW DATA\Supplier Data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SHOW DATA\Supplier Data.Designer.cs">
+      <DependentUpon>Supplier Data.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ADD DATA\New Customer.resx">
+      <DependentUpon>New Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADD DATA\New Employee.resx">
+      <DependentUpon>New Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADD DATA\New Material.resx">
+      <DependentUpon>New Material.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADD DATA\New Product.resx">
+      <DependentUpon>New Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADD DATA\New Supplier.resx">
+      <DependentUpon>New Supplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Index.resx">
+      <DependentUpon>Index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Log In.resx">
+      <DependentUpon>Log In.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAIN FUNCTION\Discount Material.resx">
+      <DependentUpon>Discount Material.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAIN FUNCTION\New Production.resx">
+      <DependentUpon>New Production.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAIN FUNCTION\New Purchase.resx">
+      <DependentUpon>New Purchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAIN FUNCTION\New Sale.resx">
+      <DependentUpon>New Sale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAIN FUNCTION\Pay Product.resx">
+      <DependentUpon>Pay Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SHOW DATA\Customer Data.resx">
+      <DependentUpon>Customer Data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SHOW DATA\Discount Material Data.resx">
+      <DependentUpon>Discount Material Data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SHOW DATA\Employee Data.resx">
+      <DependentUpon>Employee Data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SHOW DATA\Material Data.resx">
+      <DependentUpon>Material Data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SHOW DATA\Product Data.resx">
+      <DependentUpon>Product Data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SHOW DATA\Production Data.resx">
+      <DependentUpon>Production Data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SHOW DATA\Purchase Data.resx">
+      <DependentUpon>Purchase Data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SHOW DATA\PurchaseProduct Data.resx">
+      <DependentUpon>PurchaseProduct Data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SHOW DATA\Sale Data.resx">
+      <DependentUpon>Sale Data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SHOW DATA\Supplier Data.resx">
+      <DependentUpon>Supplier Data.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Factory_DatabaseDataSet.xsc">
+      <DependentUpon>Factory_DatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Factory_DatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Factory_DatabaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Factory_DatabaseDataSet.xss">
+      <DependentUpon>Factory_DatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Factory_DatabaseDataSet1.xsc">
+      <DependentUpon>Factory_DatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Factory_DatabaseDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Factory_DatabaseDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Factory_DatabaseDataSet1.xss">
+      <DependentUpon>Factory_DatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Factory_DatabaseDataSet2.xsc">
+      <DependentUpon>Factory_DatabaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Factory_DatabaseDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Factory_DatabaseDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Factory_DatabaseDataSet2.xss">
+      <DependentUpon>Factory_DatabaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Factory_DatabaseDataSet3.xsc">
+      <DependentUpon>Factory_DatabaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Factory_DatabaseDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Factory_DatabaseDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Factory_DatabaseDataSet3.xss">
+      <DependentUpon>Factory_DatabaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Google-Noto-Emoji-Travel-Places-42498-factory.ico" />
+    <None Include="Resources\logo.jpg" />
+    <None Include="Resources\cropped-bflogoBW-copy.jpg" />
+    <None Include="Resources\save-icon-32x32-1.jpg" />
+    <None Include="Resources\png-transparent-computer-icons-factory-others-infographic-logo-business.png" />
+    <None Include="Resources\Exit-Button-Png-Icon-Transparent.jpg" />
+    <None Include="Resources\download.jpg" />
+    <None Include="Resources\download %281%29.jpg" />
+    <None Include="Resources\Crystal_Clear_action_exit.svg.png" />
+    <None Include="Resources\2886a4d8229e63c13831eff9492d0cd9.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
